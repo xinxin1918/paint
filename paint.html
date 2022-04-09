@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>paint</title>
+        <style >
+            #canvas {
+                border: 1px solid;
+            }
+            .canvas-container {
+                height: 500px;
+                width: 600px;
+                border: 1px solid;
+            }
+            .tool-active {
+                outline: 1px solid red;
+            }
+
+        </style>
+    </head>
+    <body>
+
+            <canvas id="canvas" width="500" height="500"  >
+
+            </canvas>
+            <div class="tools">
+                <button class="tool-button" data-tool="line">直线</button>
+                <button class="tool-button" data-tool="rect">矩形</button>
+                <button class="tool-button" data-tool="ellipse">椭圆</button>
+                <button class="tool-button" data-tool="polygon">多边形</button>
+                <button class="tool-button" data-tool="curve">曲线</button>
+                <button class="tool-button" data-tool="radiusRect">圆角矩形</button>
+            </div>
+            <div class="actions">
+                <button class="clear-button" >Clear</button>
+            </div>
+
+        <script src="utils.js" charset="utf-8"></script>
+        <script src="shape.js" charset="utf-8"></script>
+        <script src="paint.js" charset="utf-8"></script>
+    </body>
+</html>
